@@ -25,6 +25,9 @@
     <None Update="awesomeface.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="light.frag">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="shader.frag">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

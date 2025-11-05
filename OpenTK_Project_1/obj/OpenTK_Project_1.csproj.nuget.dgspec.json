@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\almocr\\Documents\\GitHub\\OpenTK_GameEngine\\OpenTK_Project_1\\OpenTK_Project_1.csproj": {}
+    "D:\\Repositorios\\OpenTK_GameEngine\\OpenTK_Project_1\\OpenTK_Project_1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\almocr\\Documents\\GitHub\\OpenTK_GameEngine\\OpenTK_Project_1\\OpenTK_Project_1.csproj": {
+    "D:\\Repositorios\\OpenTK_GameEngine\\OpenTK_Project_1\\OpenTK_Project_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\almocr\\Documents\\GitHub\\OpenTK_GameEngine\\OpenTK_Project_1\\OpenTK_Project_1.csproj",
+        "projectUniqueName": "D:\\Repositorios\\OpenTK_GameEngine\\OpenTK_Project_1\\OpenTK_Project_1.csproj",
         "projectName": "OpenTK_Project_1",
-        "projectPath": "C:\\Users\\almocr\\Documents\\GitHub\\OpenTK_GameEngine\\OpenTK_Project_1\\OpenTK_Project_1.csproj",
-        "packagesPath": "C:\\Users\\almocr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\almocr\\Documents\\GitHub\\OpenTK_GameEngine\\OpenTK_Project_1\\obj\\",
+        "projectPath": "D:\\Repositorios\\OpenTK_GameEngine\\OpenTK_Project_1\\OpenTK_Project_1.csproj",
+        "packagesPath": "C:\\Users\\dorab\\.nuget\\packages\\",
+        "outputPath": "D:\\Repositorios\\OpenTK_GameEngine\\OpenTK_Project_1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\almocr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\dorab\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,13 +34,7 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -75,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
