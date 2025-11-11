@@ -112,3 +112,5 @@ D:\Repositorios\OpenTK_GameEngine\OpenTK_Project_1\obj\Debug\net8.0\OpenTK_Proje
 D:\Repositorios\OpenTK_GameEngine\OpenTK_Project_1\obj\Debug\net8.0\OpenTK_Project_1.genruntimeconfig.cache
 D:\Repositorios\OpenTK_GameEngine\OpenTK_Project_1\obj\Debug\net8.0\ref\OpenTK_Project_1.dll
 D:\Repositorios\OpenTK_GameEngine\OpenTK_Project_1\bin\Debug\net8.0\light.frag
+D:\Repositorios\OpenTK_GameEngine\OpenTK_Project_1\bin\Debug\net8.0\container2_specular.png
+D:\Repositorios\OpenTK_GameEngine\OpenTK_Project_1\bin\Debug\net8.0\container2.png

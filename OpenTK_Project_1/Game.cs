@@ -32,52 +32,66 @@ namespace GameEngine
 
         private readonly float[] vertices =
         {
-             // Position          Normal
-            -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f, // Front face
-             0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-             0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-             0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-            -0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-            -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+            // Positions          Normals              Texture coords
+            -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f,
+             0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 0.0f,
+             0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 1.0f,
+             0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 1.0f,
+            -0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 1.0f,
+            -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f,
 
-            -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f, // Back face
-             0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-             0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-             0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-            -0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-            -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+            -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  0.0f, 0.0f,
+             0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  1.0f, 0.0f,
+             0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  1.0f, 1.0f,
+             0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  1.0f, 1.0f,
+            -0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  0.0f, 1.0f,
+            -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  0.0f, 0.0f,
 
-            -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f, // Left face
-            -0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-            -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-            -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-            -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
-            -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
+            -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
+            -0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  1.0f, 1.0f,
+            -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
+            -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
+            -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  0.0f, 0.0f,
+            -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
 
-             0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f, // Right face
-             0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-             0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-             0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-             0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
-             0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
+             0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
+             0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  1.0f, 1.0f,
+             0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
+             0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.0f, 1.0f,
+             0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  0.0f, 0.0f,
+             0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  1.0f, 0.0f,
 
-            -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f, // Bottom face
-             0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
-             0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-             0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-            -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-            -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
+            -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 1.0f,
+             0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  1.0f, 1.0f,
+             0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  1.0f, 0.0f,
+             0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  1.0f, 0.0f,
+            -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 0.0f,
+            -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.0f, 1.0f,
 
-            -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f, // Top face
-             0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
-             0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-             0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-            -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-            -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f
+            -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 1.0f,
+             0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  1.0f, 1.0f,
+             0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  1.0f, 0.0f,
+             0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  1.0f, 0.0f,
+            -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 0.0f,
+            -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 1.0f
         };
 
 
         Vector3 cubePosition = new Vector3(0.0f, 0.0f, 0.0f);
+
+        private readonly Vector3[] _cubePositions =
+        {
+            new Vector3(0.0f, 0.0f, 0.0f),
+            new Vector3(2.0f, 5.0f, -15.0f),
+            new Vector3(-1.5f, -2.2f, -2.5f),
+            new Vector3(-3.8f, -2.0f, -12.3f),
+            new Vector3(2.4f, -0.4f, -3.5f),
+            new Vector3(-1.7f, 3.0f, -7.5f),
+            new Vector3(1.3f, -2.0f, -2.5f),
+            new Vector3(1.5f, 2.0f, -2.5f),
+            new Vector3(1.5f, 0.2f, -1.5f),
+            new Vector3(-1.3f, 1.0f, -1.5f)
+        };
 
         Vector3 lightPosition = new Vector3(2f, 1f, 1f);
         Vector3 lightScale = new Vector3(0.3f, 0.3f, 0.3f);
@@ -106,6 +120,9 @@ namespace GameEngine
         // so check out the web version for a good demonstration of what this does.
         private Matrix4 _projection;
 
+        private Texture texture0;
+        private Texture texture1;
+
         public Game(int width, int height, string title) : base(GameWindowSettings.Default, new NativeWindowSettings() { Size = (width, height), Title = title }) 
         {
 
@@ -119,6 +136,9 @@ namespace GameEngine
             lightingShader = new Shader("shader.vert", "light.frag");
             lampShader = new Shader("shader.vert", "shader.frag");
 
+            texture0 = Texture.LoadFromFile("container2.png");
+            texture1 = Texture.LoadFromFile("container2_specular.png");
+
             GL.Enable(EnableCap.DepthTest);
             GL.ClearColor(0.2f, 0.3f, 0.3f, 1.0f);
             
@@ -131,18 +151,22 @@ namespace GameEngine
 
             var vertexLocation = lightingShader.GetAttribLocation("aPosition");
             GL.EnableVertexAttribArray(vertexLocation);
-            GL.VertexAttribPointer(vertexLocation, 3, VertexAttribPointerType.Float, false, 6 * sizeof(float), 0);
+            GL.VertexAttribPointer(vertexLocation, 3, VertexAttribPointerType.Float, false, 8 * sizeof(float), 0);
 
             var normalLocation = lightingShader.GetAttribLocation("aNormal");
             GL.EnableVertexAttribArray(normalLocation);
-            GL.VertexAttribPointer(normalLocation, 3, VertexAttribPointerType.Float, false, 6 * sizeof(float), 3 * sizeof(float));
+            GL.VertexAttribPointer(normalLocation, 3, VertexAttribPointerType.Float, false, 8 * sizeof(float), 3 * sizeof(float));
+
+            var texCoordLocation = lightingShader.GetAttribLocation("aTexCoord");
+            GL.EnableVertexAttribArray(texCoordLocation);
+            GL.VertexAttribPointer(texCoordLocation, 2, VertexAttribPointerType.Float, false, 8 * sizeof(float), 6 * sizeof(float));
 
             lightVertexArrayObject = GL.GenVertexArray();
             GL.BindVertexArray(lightVertexArrayObject);
 
             var lightVertexLocation = lampShader.GetAttribLocation("aPosition");
             GL.EnableVertexAttribArray(vertexLocation);
-            GL.VertexAttribPointer(vertexLocation, 3, VertexAttribPointerType.Float, false, 6 * sizeof(float), 0);
+            GL.VertexAttribPointer(vertexLocation, 3, VertexAttribPointerType.Float, false, 8 * sizeof(float), 0);
 
 
             //Camera
@@ -165,15 +189,17 @@ namespace GameEngine
 
             float _time = (float)_timer.Elapsed.TotalSeconds;
 
-            lightPosition = new Vector3(3 * MathF.Sin(_time), 2 * MathF.Sin(.25f*_time), 3 * MathF.Cos(_time));
+            lightPosition = new Vector3(3 * MathF.Sin(_time * 0.25f), 2 * MathF.Sin(.05f*_time), 3 * MathF.Cos(_time * 0.25f));
             Matrix4 rotY = Matrix4.CreateRotationY((float)MathHelper.DegreesToRadians(45));
-            Matrix4 rotX = Matrix4.CreateRotationX((float)MathHelper.DegreesToRadians(_time)); //Transforms of the model
-            Matrix4 model = Matrix4.CreateScale(3) * rotY * rotX * Matrix4.CreateTranslation(cubePosition);
+            Matrix4 rotX = Matrix4.CreateRotationX((float)MathHelper.DegreesToRadians(_time * 5)); //Transforms of the model
+            //Matrix4 model = Matrix4.CreateScale(3) * rotY * rotX * Matrix4.CreateTranslation(cubePosition);
 
             GL.BindVertexArray(cubeVertexArrayObject);
-
+            
+            texture0.Use(TextureUnit.Texture0);
+            texture1.Use(TextureUnit.Texture1);
             lightingShader.Use();
-            lightingShader.SetMatrix4("model", model);
+            lightingShader.SetMatrix4("model", Matrix4.Identity);
             lightingShader.SetMatrix4("view", _camera.GetViewMatrix());
             lightingShader.SetMatrix4("projection", _camera.GetProjectionMatrix());
 
@@ -182,15 +208,29 @@ namespace GameEngine
             lightingShader.SetVector3("light.position", lightPosition);
             lightingShader.SetVector3("viewPos", _camera.Position);
 
+            
+
+            lightingShader.SetInt("material.diffuse", 0);
+            lightingShader.SetInt("material.specular", 1);
             lightingShader.SetVector3("material.ambient", new Vector3(1.0f, 0.5f, 0.31f));
-            lightingShader.SetVector3("material.diffuse", new Vector3(1.0f, 0.5f, 0.31f));
-            lightingShader.SetVector3("material.specular", new Vector3(0.5f, 0.5f, 0.5f));
-            lightingShader.SetFloat("material.shininess", 32.0f);
+            //lightingShader.SetVector3("material.diffuse", new Vector3(1.0f, 0.5f, 0.31f));
+            //lightingShader.SetVector3("material.specular", new Vector3(0.5f, 0.5f, 0.5f));
+            lightingShader.SetFloat("material.shininess", 64.0f);
             lightingShader.SetVector3("light.ambient", new Vector3(0.2f, 0.2f, 0.2f));
             lightingShader.SetVector3("light.diffuse", new Vector3(0.5f, 0.5f, 0.5f)); // darken the light a bit to fit the scene
             lightingShader.SetVector3("light.specular", new Vector3(1.0f, 1.0f, 1.0f));
 
             GL.DrawArrays(PrimitiveType.Triangles, 0, 36);
+            /*for (int i = 0; i < _cubePositions.Length; i++)
+            {
+                Matrix4 model = Matrix4.Identity;
+                model *= Matrix4.CreateTranslation(_cubePositions[i]);
+                float angle = 20.0f * i;
+                model *= Matrix4.CreateFromAxisAngle(new Vector3(1.0f, 0.3f, 0.5f), angle);
+                lightingShader.SetMatrix4("model", model);
+
+                GL.DrawArrays(PrimitiveType.Triangles, 0, 36);
+            }*/
 
             Matrix4 lightModel = Matrix4.CreateScale(lightScale) * Matrix4.CreateTranslation(lightPosition);
 
@@ -201,8 +241,10 @@ namespace GameEngine
             lampShader.SetMatrix4("model", lightModel);
             lampShader.SetMatrix4("view", _camera.GetViewMatrix());
             lampShader.SetMatrix4("projection", _camera.GetProjectionMatrix());
-
+            
             GL.DrawArrays(PrimitiveType.Triangles, 0, 36);
+
+            
 
             /*foreach(var pos in cubePositions)
             {
