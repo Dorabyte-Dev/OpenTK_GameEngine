@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpenTK_Project_1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+235a48b312305adb2d8083615df4568e68032d65")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e169aed5a22c3c645e1e6ad61da24661195ce7a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpenTK_Project_1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpenTK_Project_1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

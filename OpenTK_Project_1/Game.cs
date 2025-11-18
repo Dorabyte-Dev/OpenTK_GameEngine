@@ -203,12 +203,11 @@ namespace GameEngine
             lightingShader.SetMatrix4("view", _camera.GetViewMatrix());
             lightingShader.SetMatrix4("projection", _camera.GetProjectionMatrix());
 
+
             lightingShader.SetVector3("objectColor", new Vector3(1.0f, 0.5f, 0.31f));
             //lightingShader.SetVector3("lightColor", new Vector3(1.0f, 0.3f, 1.0f));
             lightingShader.SetVector3("light.position", lightPosition);
             lightingShader.SetVector3("viewPos", _camera.Position);
-
-            
 
             lightingShader.SetInt("material.diffuse", 0);
             lightingShader.SetInt("material.specular", 1);
@@ -219,9 +218,12 @@ namespace GameEngine
             lightingShader.SetVector3("light.ambient", new Vector3(0.2f, 0.2f, 0.2f));
             lightingShader.SetVector3("light.diffuse", new Vector3(0.5f, 0.5f, 0.5f)); // darken the light a bit to fit the scene
             lightingShader.SetVector3("light.specular", new Vector3(1.0f, 1.0f, 1.0f));
+            lightingShader.SetFloat("light.constAtt", 1.0f);
+            lightingShader.SetFloat("light.linearAtt", 0.22f);
+            lightingShader.SetFloat("light.quadAtt", 0.20f);
 
-            GL.DrawArrays(PrimitiveType.Triangles, 0, 36);
-            /*for (int i = 0; i < _cubePositions.Length; i++)
+            //GL.DrawArrays(PrimitiveType.Triangles, 0, 36);
+            for (int i = 0; i < _cubePositions.Length; i++)
             {
                 Matrix4 model = Matrix4.Identity;
                 model *= Matrix4.CreateTranslation(_cubePositions[i]);
@@ -230,7 +232,7 @@ namespace GameEngine
                 lightingShader.SetMatrix4("model", model);
 
                 GL.DrawArrays(PrimitiveType.Triangles, 0, 36);
-            }*/
+            }
 
             Matrix4 lightModel = Matrix4.CreateScale(lightScale) * Matrix4.CreateTranslation(lightPosition);
 
